@@ -1,0 +1,156 @@
+/* -------------------------------------- */
+/* --------------- GLOBAL --------------- */
+/* -------------------------------------- */
+body {
+	color: var(--gray-dark);
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.game99__game-title {
+	font-family: 'Faster One', sans-serif;
+}
+
+.game99__btn_primary {
+	background-color: var(--orange);
+	color: #fff;
+}
+/* ------------------------------------------ */
+/* --------------- END GLOBAL --------------- */
+/* ------------------------------------------ */
+
+/* ------------------------------------ */
+/* --------------- HOME --------------- */
+/* ------------------------------------ */
+.game99-home__inner {
+	max-width: 600px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 100px 25px;
+}
+
+.game99-home__select {
+	margin-bottom: 1rem;
+}
+/* ---------------------------------------- */
+/* --------------- END HOME --------------- */
+/* ---------------------------------------- */
+
+
+/* ------------------------------------------- */
+/* --------------- TIC TAC TOE --------------- */
+/* ------------------------------------------- */
+.tictactoe {
+	position: relative;
+	width: 100%;
+
+	padding-bottom: 50px;
+}
+
+.tictactoe__heading1 {
+	text-align: center;
+	margin: 0;
+	background-color: var(--cyan);
+	color: var(--yellow);
+
+	padding: 1em  0 1em 0;
+	margin-bottom: 1em;
+}
+
+.tictactoe__heading2 {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.tictactoe__board {
+	position: relative;
+	display: block;
+	width: 300px;
+	
+	margin: 0 auto;
+}
+
+.tictactoe__spaces {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	margin: 50px 0;
+
+	width: 300px;
+	height: 300px;
+}
+
+.tictactoe__space {
+	position: relative;
+	display: block;
+	width: 33.3333%;
+	height: 33.3333%;
+
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+
+	align-items: center;
+}
+
+.tictactoe__space:nth-child(1),
+.tictactoe__space:nth-child(2),
+.tictactoe__space:nth-child(3) {
+	border-bottom: 2px solid var(--gray-dark);
+}
+
+.tictactoe__space:nth-child(4),
+.tictactoe__space:nth-child(5),
+.tictactoe__space:nth-child(6) {
+	border-bottom: 2px solid var(--gray-dark);
+}
+
+.tictactoe__space:nth-child(1),
+.tictactoe__space:nth-child(4),
+.tictactoe__space:nth-child(7) {
+	border-right: 2px solid var(--gray-dark);
+}
+
+.tictactoe__space:nth-child(2),
+.tictactoe__space:nth-child(5),
+.tictactoe__space:nth-child(8) {
+	border-right: 2px solid var(--gray-dark);
+}
+
+.tictactoe__winner {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	padding-top: 100px;
+	background-color: var(--cyan);
+}
+
+.tictactoe__winner-content {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.tictactoe__winner-btn {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.tictactoe__scoreboard {
+	position: relative;
+}
+
+.tictactoe__player-symbol {
+	font-size: 38px;
+}
+
+.tictactoe__go-home {
+	margin-top: 50px;
+}
